@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>用户修改页面</title>
+   <script src="../js/jquery.min.js"></script>
+   <link rel="stylesheet" href="../css/change.css">
+</head>
+
+<body>
+   <!-- 登录页面 -->
+   <div class="box ">
+      <h1>修改密码</h1>
+      <ul>
+         <li> <span>输入用户名：</span><input type="tel" name="" id="" class="use"
+               onkeyup="value=value.replace(/[\u4e00-\u9fa5]/ig,'')"> </li>
+         <li> <span>输入旧密码：</span><input type="password" class="old"
+               onkeyup="value=value.replace(/[\u4e00-\u9fa5]/ig,'')"><img src="../image/eye slash-fill.png" alt=""
+               class="eye">
+         </li>
+         <li> <span>输入新密码：</span><input type="password" class="pad"
+               onkeyup="value=value.replace(/[\u4e00-\u9fa5]/ig,'')"><img src="../image/eye slash-fill.png" alt=""
+               class="eye1">
+         </li>
+         <i class="no">输入6~10位英文或数字</i>
+         <li> <span>确认新密码：</span><input type="password" class="pad1"
+               onkeyup="value=value.replace(/[\u4e00-\u9fa5]/ig,'')"><img src="../image/eye slash-fill.png" alt=""
+               class="eye2">
+         </li>
+         <i class="ps">输入6~10位英文或数字</i>
+      </ul>
+      <button class="yes">确认</button>
+   </div>
+   <!--修改成功 -->
+   <div class="ok">
+      <h3 class="good">修改成功</h3>
+      <button class="go">确定</button>
+   </div>
+   <!-- 修改失败 -->
+   <div class="err">
+      <h3>修改失败</h3>
+      <button class="back">确定</button>
+   </div>
+   <!-- 新密码与旧密码一样 -->
+   <div class="err1">
+      <h3>新密码不能与旧密码一样呢~</h3>
+      <button class="back1">确定</button>
+   </div>
+   <script src="../js/change.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>用户注册</title>
+   <script src="../js/jquery.min.js"></script>
+   <link rel="stylesheet" href="../css/regsit.css">
+</head>
+
+<body>
+   <!-- 注册页面 -->
+   <div class="box ">
+      <h1>用户注册</h1>
+      <ul>
+         <!-- 输入这个正则表达式打出的中文都会成空格 -->
+         <li> <span>请输入账号：</span><input onkeyup="value=value.replace(/[\u4e00-\u9fa5]/ig,'')" type="username"
+               class="use"></li>
+         <i class="have">输入3~8位英文数字</i>
+         <li> <span>请输入密码：</span><input type="password" id="" class="pad"
+               onkeyup="value=value.replace(/[\u4e00-\u9fa5]/ig,'')"> <img src="../image/eye slash-fill.png" alt=""
+               class="eye1"></li>
+
+         <i class="no">输入6~10位英文数字</i>
+
+         <li> <span>请确认密码：</span><input type="password" id="" class="pad1"
+               onkeyup="value=value.replace(/[\u4e00-\u9fa5]/ig,'')"> <img src="../image/eye slash-fill.png" alt=""
+               class="eye2">
+         </li>
+
+         <i class="ps">输入6~10位英文数字</i>
+
+      </ul>
+      <button class="regist">点击注册</button>
+   </div>
+   <!-- 没填完-->
+   <div class="err">
+      <h3>你有一个没填写哦~</h3>
+      <button class="back">确定</button>
+   </div>
+   <div class="err1">
+      <h3 class="good">恭喜你注册成功</h3>
+      <button class="back1">确定</button>
+   </div>
+   <script src="../js/regist.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,137 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+ul {
+   padding: 0;
+}
+
+li {
+   list-style: none;
+}
+
+input {
+   outline: none;
+}
+
+.box {
+   position: relative;
+   width: 450px;
+   height: 300px;
+   margin: 100px auto;
+   transition: all 1s;
+}
+
+
+h1 {
+   /* 模糊 */
+   width: 100%;
+   height: 50px;
+   line-height: 50px;
+   text-align: center;
+   border-bottom: 1px solid black;
+}
+
+ul li {
+   width: 100%;
+   height: 70px;
+   margin-top: 10px;
+   line-height: 70px;
+}
+
+input {
+   width: 200px;
+   height: 35px;
+   line-height: 35px;
+   border-radius: 20px;
+   margin-left: 20px;
+   padding-left: 10px;
+   font-size: 12px;
+   vertical-align: middle;
+}
+
+img {
+   position: absolute;
+   top: 170px;
+   right: 70px;
+}
+
+span {
+   display: inline-block;
+   height: 100%;
+   font-size: 18px;
+   font-weight: 600;
+   margin-left: 50px;
+}
+
+.box button {
+   width: 100px;
+   height: 30px;
+   margin-top: 30px;
+   font-size: 16px;
+   font-weight: 500;
+}
+
+.login {
+   float: left;
+   margin-left: 80px;
+}
+
+.regist {
+   float: right;
+   margin-right: 80px;
+}
+button:hover{
+   cursor: pointer;
+}
+a {
+   text-decoration: none;
+}
+
+.update {
+   display: inline-block;
+   font-size: 12px;
+   color: grey;
+   width: 50px;
+   position: absolute;
+   top: 30px;
+   right: 10px;
+}
+
+.err,
+.run {
+   display: none;
+   position: absolute;
+   left: 560px;
+   top: 170px;
+   text-align: center;
+   width: 400px;
+   height: 200px;
+   background-color: gray;
+   border-radius: 40px;
+   opacity: .7;
+}
+
+.err h3,
+.run h3 {
+   color: white;
+   margin-top: 40px;
+}
+
+.back,
+.go {
+
+   color: rgb(0, 0, 0);
+   background-color: rgb(255, 255, 255);
+   width: 100px;
+   height: 30px;
+   margin-top: 70px;
+   font-size: 16px;
+   font-weight: 500;
+   border-radius: 20px;
+}
+
+.filter {
+   filter: blur(5px);
+}

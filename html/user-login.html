@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+      div {
+         width: 500px;
+         height: 300px;
+         background-color: rgb(177, 165, 165);
+         margin: 200px auto;
+         border-radius: 100px;
+         text-align: center;
+         line-height: 300px;
+         font-weight: 700;
+         font-size: 20px;
+      }
+   </style>
+</head>
+
+<body>
+   <div>
+   </div>
+   <script>
+      let div = document.querySelector('div')
+      let data = localStorage.getItem('username')
+      div.innerHTML = '欢迎您'+data
+   </script>
+</body>
+
+</html>

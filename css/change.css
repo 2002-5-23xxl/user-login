@@ -1,0 +1,132 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+ul {
+   padding: 0;
+}
+
+li {
+   list-style: none;
+}
+
+input {
+   outline: none;
+}
+
+.box {
+   position: relative;
+   width: 450px;
+   height: 500px;
+   margin: 100px auto;
+   transition: all .5s;
+   border: 1px solid black;
+}
+
+
+h1 {
+   width: 100%;
+   height: 50px;
+   line-height: 50px;
+   text-align: center;
+   border-bottom: 1px solid black;
+}
+
+ul li {
+   width: 100%;
+   height: 70px;
+   margin-top: 10px;
+   line-height: 70px;
+}
+
+input {
+   width: 200px;
+   height: 35px;
+   line-height: 35px;
+   border-radius: 20px;
+   margin-left: 20px;
+   padding-left: 10px;
+   font-size: 12px;
+   vertical-align: middle;
+}
+
+img {
+   position: absolute;
+   right: 80px;
+   margin-top: 30px;
+}
+
+span {
+   width: 130px;
+   text-align: right;
+   display: inline-block;
+   height: 100%;
+   font-size: 18px;
+   font-weight: 600;
+   margin-left: 15px;
+}
+
+.yes {
+   width: 200px;
+   height: 30px;
+   border-radius: 20px;
+   margin-top: 30px;
+   font-size: 16px;
+   font-weight: 500;
+   margin-left: 125px;
+}
+
+
+/* 弹窗 */
+.ok,
+.err,
+.err1 {
+   display: none;
+   position: absolute;
+   left: 560px;
+   top: 230px;
+   text-align: center;
+   width: 400px;
+   height: 200px;
+   background-color: gray;
+   border-radius: 40px;
+   opacity: .7;
+}
+
+.ok h3,
+.err h3,
+.err1 h3 {
+   color: white;
+   margin-top: 40px;
+}
+
+.back,
+.go,
+.back1 {
+   color: rgb(0, 0, 0);
+   background-color: rgb(255, 255, 255);
+   width: 100px;
+   height: 30px;
+   margin-top: 70px;
+   font-size: 16px;
+   font-weight: 500;
+   border-radius: 20px;
+}
+
+.filter {
+   filter: blur(5px);
+}
+
+button:hover {
+   cursor: pointer;
+}
+
+i {
+   display: inline-block;
+   width: 150px;
+   text-align: center;
+   margin-left: 200px;
+   font-size: 12px;
+   color: rgb(119, 119, 119);
+}

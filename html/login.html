@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>用户登录页面</title>
+   <script src="../js/jquery.min.js"></script>
+   <link rel="stylesheet" href="../css/login.css">
+</head>
+
+<body>
+   <!-- 登录页面 -->
+   <div class="box ">
+      <h1>用户登录</h1>
+      <ul>
+         <li> <span>请输入账号：</span><input type="tel" name="" id="" class="use"
+               onkeyup="value=value.replace(/[\u4e00-\u9fa5]/ig,'')"> </li>
+         <li> <span>请输入密码：</span><input type="password" class="pad"
+               onkeyup="value=value.replace(/[\u4e00-\u9fa5]/ig,'')"><img src="../image/eye slash-fill.png" alt="">
+         </li>
+      </ul>
+      <button class="login">登录</button>
+      <button class="regist">注册</button>
+      <a href="http://127.0.0.1:5500/15.users-login/html/change.html" class="update">修改密码</a>
+   </div>
+
+   <!--登录失败 -->
+   <div class="err">
+      <h3>您输入的不对哦!</h3>
+      <button class="back">确定</button>
+   </div>
+   <div class="run">
+      <h3 class="yes">登录成功</h3>
+      <button class="go">确定</button>
+   </div>
+   <script src="../js/login.js">
+
+   </script>
+</body>
+
+</html>
